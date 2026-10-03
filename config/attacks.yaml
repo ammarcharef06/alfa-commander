@@ -1,0 +1,35 @@
+# ============================================================
+# Alfa Commander - Attacks Configuration
+# إعدادات الهجمات
+# ============================================================
+
+deauth:
+  default_count: 5
+  default_interval: 1
+  default_reason: 7
+  max_concurrent: 3
+
+beacon_flood:
+  default_ssid_count: 100
+  categories:
+    - home
+    - router_default
+    - isp
+    - public
+    - cafe
+    - hotel
+
+wps:
+  pixie_timeout: 300
+  pin_timeout: 3600
+  use_reaver: true
+  use_bully: false
+
+pmkid:
+  default_duration: 120
+  active_attack: true
+
+handshake:
+  default_duration: 120
+  auto_deauth: true
+  deauth_interval: 30

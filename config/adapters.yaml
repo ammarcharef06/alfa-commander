@@ -1,0 +1,44 @@
+# ============================================================
+# Alfa Commander - Adapters Configuration
+# إعدادات محولات Alfa
+# ============================================================
+
+# إعدادات عامة لكل المحولات
+general:
+  auto_detect_on_startup: true
+  auto_test_injection: true
+  cache_injection_results_minutes: 5
+  warn_on_weak_injection: true
+  weak_injection_threshold: 15
+
+# إعدادات خاصة بكل شريحة
+chipsets:
+  RTL8187L:
+    preferred_monitor_method: airmon-ng
+    fallback_to_iw: true
+    max_deauth_rate: 10
+    needs_ignore_negative_one: true
+    bands: ["2.4"]
+
+  RTL8812AU:
+    preferred_monitor_method: airmon-ng
+    requires_external_driver: true
+    driver_package: "8812au-dkms"
+    bands: ["2.4", "5"]
+
+  RTL8814AU:
+    preferred_monitor_method: airmon-ng
+    requires_external_driver: true
+    bands: ["2.4", "5"]
+
+  MT7610U:
+    preferred_monitor_method: iw
+    fallback_to_airmon: true
+    supports_active_monitor: true
+    bands: ["2.4", "5"]
+
+  MT7921AUN:
+    preferred_monitor_method: iw
+    min_kernel: "5.18"
+    supports_active_monitor: true
+    bands: ["2.4", "5", "6"]

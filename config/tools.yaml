@@ -1,0 +1,46 @@
+# ============================================================
+# Alfa Commander - Tools Configuration
+# إعدادات أدوات Kali
+# ============================================================
+
+airmon-ng:
+  binary: airmon-ng
+  timeout: 20
+  auto_kill_conflicting: true
+
+airodump-ng:
+  binary: airodump-ng
+  default_band: bg
+  write_interval: 1
+  output_format: csv,pcap
+
+aireplay-ng:
+  binary: aireplay-ng
+  ignore_negative_one: true
+  injection_test_timeout: 30
+
+mdk4:
+  binary: mdk4
+  default_beacon_count: 0
+
+hcxdumptool:
+  binary: hcxdumptool
+  converter: hcxpcapngtool
+  default_duration: 120
+
+reaver:
+  binary: reaver
+  wash_binary: wash
+  pixie_timeout: 300
+
+hashcat:
+  binary: hashcat
+  potfile: hashcat.potfile
+  default_workload: 2
+
+hostapd:
+  binary: hostapd
+  config_dir: /tmp
+
+dnsmasq:
+  binary: dnsmasq

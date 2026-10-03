@@ -1,0 +1,23 @@
+# ============================================================
+# Alfa Commander - UI Configuration
+# إعدادات الواجهة
+# ============================================================
+
+ui:
+  theme: dark
+  language: ar
+  font_family: Cairo
+  font_size: 11
+  window_width: 1400
+  window_height: 900
+
+scan_tab:
+  show_hidden: true
+  sort_by: power
+  auto_export_csv: false
+  max_rows: 1000
+
+log_console:
+  max_lines: 5000
+  auto_scroll: true
+  default_filter: ALL

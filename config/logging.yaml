@@ -1,0 +1,13 @@
+# ============================================================
+# Alfa Commander - Logging Configuration
+# إعدادات السجلات
+# ============================================================
+
+logging:
+  level: INFO
+  file_enabled: true
+  console_enabled: true
+  max_bytes: 10485760
+  backup_count: 5
+  log_commands: true
+  log_packets: false
